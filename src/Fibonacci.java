@@ -20,26 +20,26 @@ public class Fibonacci {
     }
 
     /**
-     * 逻辑递归
-     * 如果求result[n]，逻辑递归更好，不用重复计算result[i]
+     * 迭代
+     * 如果求result[n]，迭代更好，不用重复计算result[i]
      * 13ms
      * 9148k
      */
     public int Fibonacci_1(int n){
-        int pre1=1;
-        int pre2=1;
-        int result=0;
+        int first=1;
+        int second=1;
+        int third=0;
         if(n<=0){
             return 0;
         }else if(n==1||n==2){
             return 1;
         }else{
             for(int i=3;i<=n;i++){
-                result=pre1+pre2;
-                pre1=pre2;
-                pre2=result;
+                third=first+second;
+                first=second;
+                second=third;
             }
-            return result;
+            return third;
         }
     }
 
