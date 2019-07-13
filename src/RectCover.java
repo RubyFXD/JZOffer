@@ -4,7 +4,7 @@
  */
 public class RectCover {
     /**
-     * 迭代解决，迭代方法和斐波那切一样
+     * 迭代解决，迭代方法和斐波那契数列一样
      */
     public int RectCover(int target) {
         int first=1;
