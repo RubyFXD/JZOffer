@@ -3,7 +3,7 @@
  */
 public class JumpFloorII {
     /**
-     * 迭代求解
+     * 动态规划+迭代实现
      */
     public int JumpFloorII(int target) {
         int [] array= new int[target+1];
